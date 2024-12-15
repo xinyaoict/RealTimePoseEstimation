@@ -91,4 +91,14 @@ model = init_model(config_file, checkpoint_file, device='cpu')  # or device='cud
 results = inference_topdown(model, 'demo.jpg')
 ```
 
-    
+## Step 4. Install Qt
+To design a GUI using QT, we use PyQt5. Please note OpenCV also uses QT internally when calling window-related functions, which will cause errors if Qt is used again. So we must install the headless version of OpenCV.
+
+Install opencv headless:
+```python
+pip install opencv-python-headless
+```
+Install PyQt5:
+```python
+pip install PyQt5
+```
