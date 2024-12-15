@@ -24,8 +24,6 @@ pip install -U openmim
 mim install mmengine
 mim install "mmcv>=2.0.1"
 ```
-
-
 Note that some of the demo scripts in MMPose require MMDetection (mmdet) for human detection. If you want to run these demo scripts with mmdet, you can easily install mmdet as a dependency by running:
 mim install "mmdet>=3.1.0"
 
