@@ -33,7 +33,7 @@ Note that some of the demo scripts in MMPose require MMDetection (mmdet) for hum
 mmdet 2.x <=> mmpose 0.x <=> mmcv 1.x
 mmdet 3.x <=> mmpose 1.x <=> mmcv 2.x
 ```
-You can check the appropriate installation command depending on the type of system, CUDA version, PyTorch version, and MMCV version on this link:<https://mmcv.readthedocs.io/en/latest/get_started/installation.html>
+You can check the appropriate installation command depending on the type of system, CUDA version, PyTorch version, and MMCV version on this link: <https://mmcv.readthedocs.io/en/latest/get_started/installation.html>
 
 
 ## Step 4. Install Qt
