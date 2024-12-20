@@ -6,14 +6,14 @@ conda create --name openmmlab python=3.8 -y
 conda activate openmmlab
 ```
 ## Step 2. Install PyTorch following official instructions, e.g.
-### On GPU platforms:
+#### On GPU platforms:
 ```python
 conda install pytorch torchvision -c pytorch
 ```
-### WARNING
+#### WARNING
 This command will automatically install the latest version PyTorch and cudatoolkit, please check whether they match your environment.
 
-### On CPU platforms:
+#### On CPU platforms:
 ```python
 conda install pytorch torchvision cpuonly -c pytorch
 ```
@@ -25,17 +25,14 @@ mim install mmengine
 pip install "mmcv==2.1.0"
 ```
 Note that some of the demo scripts in MMPose require MMDetection (mmdet) for human detection. If you want to run these demo scripts with mmdet, you can easily install mmdet as a dependency by running:
-mim install "mmdet==3.3.0"
+```python mim install "mmdet==3.3.0"```
 
-### NOTE
-
-### Here are the version correspondences between mmdet, mmpose and mmcv:
+#### NOTE
+#### Here are the version correspondences between mmdet, mmpose and mmcv:
 ```python
 mmdet 2.x <=> mmpose 0.x <=> mmcv 1.x
 mmdet 3.x <=> mmpose 1.x <=> mmcv 2.x
 ```
-
-If you encounter version incompatibility issues, please check the correspondence using pip list | grep mm and upgrade or downgrade the dependencies accordingly. Please note that mmcv-full is only for mmcv 1.x, so please uninstall it first, and then use mim install mmcv to install mmcv 2.x.
 
 ## Step 4. Install Qt
 To design a GUI using QT, we use PyQt5. Please note OpenCV also uses QT internally when calling window-related functions, which will cause errors if Qt is used again. So we must install the headless version of OpenCV.
@@ -43,6 +40,14 @@ To design a GUI using QT, we use PyQt5. Please note OpenCV also uses QT internal
 Install opencv headless:
 ```python
 pip install opencv-python-headless
+```
+Install PyQt5:
+```python
+pip install PyQt5
+```
+Install Imutils:
+```python
+pip install imutils
 ```
 
 ### Best Practices
@@ -63,14 +68,7 @@ To use mmpose as a dependency or third-party package, install it with pip:
 ```python
 mim install "mmpose>=1.1.0"
 ```
-Install PyQt5:
-```python
-pip install PyQt5
-```
-Install Imutils:
-```python
-pip install imutils
-```
+
 
 
 #### Verify the installation
