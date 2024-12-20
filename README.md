@@ -22,10 +22,10 @@ conda install pytorch torchvision cpuonly -c pytorch
 ```python
 pip install -U openmim
 mim install mmengine
-mim install "mmcv>=2.0.1"
+pip install "mmcv==2.1.0"
 ```
 Note that some of the demo scripts in MMPose require MMDetection (mmdet) for human detection. If you want to run these demo scripts with mmdet, you can easily install mmdet as a dependency by running:
-mim install "mmdet>=3.1.0"
+mim install "mmdet==3.3.0"
 
 ### NOTE
 
@@ -36,6 +36,14 @@ mmdet 3.x <=> mmpose 1.x <=> mmcv 2.x
 ```
 
 If you encounter version incompatibility issues, please check the correspondence using pip list | grep mm and upgrade or downgrade the dependencies accordingly. Please note that mmcv-full is only for mmcv 1.x, so please uninstall it first, and then use mim install mmcv to install mmcv 2.x.
+
+## Step 4. Install Qt
+To design a GUI using QT, we use PyQt5. Please note OpenCV also uses QT internally when calling window-related functions, which will cause errors if Qt is used again. So we must install the headless version of OpenCV.
+
+Install opencv headless:
+```python
+pip install opencv-python-headless
+```
 
 ### Best Practices
 #### Build MMPose from source
@@ -55,6 +63,15 @@ To use mmpose as a dependency or third-party package, install it with pip:
 ```python
 mim install "mmpose>=1.1.0"
 ```
+Install PyQt5:
+```python
+pip install PyQt5
+```
+Install Imutils:
+```python
+pip install imutils
+```
+
 
 #### Verify the installation
 To verify that MMPose is installed correctly, you can run an inference demo with the following steps.
@@ -91,14 +108,5 @@ model = init_model(config_file, checkpoint_file, device='cpu')  # or device='cud
 results = inference_topdown(model, 'demo.jpg')
 ```
 
-## Step 4. Install Qt
-To design a GUI using QT, we use PyQt5. Please note OpenCV also uses QT internally when calling window-related functions, which will cause errors if Qt is used again. So we must install the headless version of OpenCV.
 
-Install opencv headless:
-```python
-pip install opencv-python-headless
-```
-Install PyQt5:
-```python
-pip install PyQt5
-```
+
