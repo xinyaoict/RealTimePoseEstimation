@@ -72,7 +72,7 @@ python main_new.py
 
 ## Demo
 Demo (QT): https://drive.google.com/file/d/1SvFE6psN6G54zn26EITr49VTLA7Hl0QQ/view?usp=drive_lin k
-https://drive.google.com/file/d/1AkX61sOqXOJDKbCwg5dFvhJYl4WuMsoh/view?usp=drive_ link
+Demo (Android): https://drive.google.com/file/d/1AkX61sOqXOJDKbCwg5dFvhJYl4WuMsoh/view?usp=drive_ link
 
 
 
