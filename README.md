@@ -70,6 +70,10 @@ python main_new.py
 # thus any local modifications made to the code will take effect without reinstallation.
 ```
 
+## Demo
+Demo (QT): https://drive.google.com/file/d/1SvFE6psN6G54zn26EITr49VTLA7Hl0QQ/view?usp=drive_lin k
+https://drive.google.com/file/d/1AkX61sOqXOJDKbCwg5dFvhJYl4WuMsoh/view?usp=drive_ link
+
 
 
 
